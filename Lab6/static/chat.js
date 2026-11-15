@@ -99,7 +99,7 @@ form.addEventListener(
             }
 
             addMessage(
-                "Gemini："
+                "GPT-OSS-20B："
                 + data.reply,
                 "ai"
             );
@@ -145,7 +145,7 @@ resetButton.addEventListener(
             messages.innerHTML = "";
 
             addMessage(
-                "Gemini：已開始新的對話。",
+                "GPT-OSS-20B：已開始新的對話。",
                 "ai"
             );
         }
