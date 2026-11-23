@@ -4,7 +4,7 @@ import ai_edge_litert.interpreter as tflite
 import os
 
 # 載入 TFLite 模型
-interpreter = tflite.Interpreter(model_path="mnist_model.tflite")
+interpreter = tflite.Interpreter(model_path="mnist_model_20261123_201425_691839.tflite")
 interpreter.allocate_tensors()
 
 # 取得輸入與輸出節點的詳細規格
@@ -79,4 +79,4 @@ def preprocess_and_predict(image_path):
     print(f"辨識結果: {result} (信心度: {confidence*100:.2f}%)")
 
 # 執行預測
-preprocess_and_predict('image.jpg')
+preprocess_and_predict("image.jpg")
